@@ -1,0 +1,226 @@
+%
+%  CfA Proposal Template for time at FLWO/MMT/Magellan 
+%
+%  Use this template for all observing proposals.
+%  No style file is required.
+%
+%  Version 1.1    8 October 2010
+%  Changed topmargin from 0.25in to 0.5in (DJM 2010-10-08)
+%
+%  Version 1.2    12 April 2016
+%  Changed topmargin from 0.5in to 1.0in (DJM 2010-10-08)
+%
+%%%  For information on CfA observing facilities please visit 
+%    the CfA TAC web page: 
+%
+%%%  http://www.cfa.harvard.edu/~kenyon/TAC/ 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  The template begins here.  The font must be 12 point, the vertical
+%  line spacing must be 12.5 point, and the margins must be at least 
+%  1-inch on all sides.  
+%
+%  Do not override these limits
+%
+%  To produce a postscript file with better computer viewable fonts,
+%  please use dvips -Ppdf -o file.ps file.dvi 
+%
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in 
+
+\linespread{1.042}
+\normalsize
+\textwidth=6.5in
+\textheight=9.0in
+\topmargin=0.0in
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\pagenumbering{arabic}
+\usepackage[top=1.in, bottom=1.in, left=1.in, right=1.in, bindingoffset=0.0in]{geometry}
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+\renewcommand{\floatpagefraction}{0.9}
+
+\usepackage{cfa}
+
+\begin{document}
+%%% The proposal consists of these sections:
+%
+%   Scientific justification & Experimental design: up to 2 pages of text
+%   References, Figures, target list, and publications: up to 2 pages
+%
+% \vspace{-1cm}
+\section*{Scientific Justification}\vskip-0.2in
+
+% Describe the background and goals for your project.
+
+% Stellar streams are a powerful tool for constraining the Milky Way gravitational potential.
+% A precision measurement of the Galactic potential is imperative in validating the currently preferred cosmological model, which predicts triaxial halos of dark matter around galaxies.
+% Numerous streams were discovered photometrically (Figure~1), but only two of the low-mass, narrow streams have been followed-up spectroscopically, Pal~5 and GD-1.
+% As a result, the constraints they put on the potential are limited in radial range and derived under the assumption of symmetry (Koposov et al. 2010, K\" upper et al. 2015, Bovy et al. 2016, Bonaca et al., in prep).
+% We propose to extend this approach and provide strong constraints on the Milky Way potential by obtaining radial velocities along (1) a tidal stream with constraints complementary to the existing ones, and (2) the most distant known low-mass stream.
+% 
+% {\bf NGC~5466 -- a novel view of the inner halo:}
+% Most of the streams have been discovered within 20 kpc, including Pal5 and GD-1.
+% But even though the globular cluster NGC~5466 is exploring the same volume, thanks to its orbital parameters, the produced tidal tails are more sensitive to the overall halo shape (Lux et al. 2012).
+% Figure~2 shows a set of 10 models of the NGC~5466 system in 10 halo potentials sampled from the posterior constrained by the Pal~5 and GD-1 streams using the modeling approach developed in Bonaca et al. (2014).
+% Different models are color-coded by the flattening along the $z$ axis.
+% While all of the models predict similar on-sky positions, in good agreement with the observed stream (Figure~2, left), the radial velocity profile can easily distinguish between different halo shapes allowed by the current halo constraints (Figure~2, right).
+% Furthermore, a more precise measurement of the halo shape will also improve the recovery of halo mass and concentration -- crucial parameters for interpreting the Milky Way in a cosmological context.
+% 
+% {\bf Styx -- a glimpse into the outer halo:}
+% There is some tension between derived halo properties using streams in the inner (e.g., Pal~5, K\" upper et al. 2015) and the outer halo (e.g., Sagittarius, Law \& Majewski 2010). 
+% These differences could point to a more complex gravitational field than is usually modeled, one that is influenced by the assembly of baryons at smaller radii (e.g., Zhu et al. 2016) and by massive satellites at large radii (e.g., Vera-Ciro \& Helmi 2013).
+% However, this cannot be definitively established at the present because there is some uncertainty in modeling distant streams originating from larger satellites (e.g., Pe\~ narrubia et al. 2010).
+% Measuring radial velocities along Styx, the most distant low-mass stream (45\,kpc, Grillmair 2009), would mitigate such concerns.
+% The first kinematics of a cold stream beyond 20\,kpc will provide the most robust test on the radial dependence of the dark matter halo density profile and shape.
+% 
+% Radial velocities of the stream members are crucial for accurate gravitational potential recovery (Figure~2).
+% Here \textbf{we propose to measure radial velocities for 150 stars along the NGC~5466 and Styx streams with MMT/Hectochelle}.
+% The Hectochelle field-of-view is well matched to the streams' widths, and its sensitivity allows efficient mapping of the entire streams.
+% Combined with the data already at hand for Pal~5 and GD-1 streams, using these new measurements within our modeling framework will provide significantly improved constraints on the distribution of dark matter within 50~kpc.
+
+\pagebreak
+\section*{Experimental Design}\vskip-0.2in
+
+% Describe the proposed observations and the targets.
+
+\noindent{\bf Observing Strategy:}
+We will use MMT/Hectochelle spectrograph to measure radial velocities of stars in the GD-1 stream.
+- high probability members based on cmd + pm, number per field
+- pilot data obtained in one field, success rate
+- small parallax for the rest --> complement H3 to fainter magnitudes
+- 13 fields to map entire region with potential signatures of interaction
+% Both streams are photometrically detected in the SDSS, which we will use for spectroscopic targeting.
+% Streams occupy a well defined region in the color-magnitude diagram (Figure~3, NGC~5466 on the left, and Styx in the middle), so target priorities will be assigned through matched filtering to reduce the contamination from the Milky Way field stars.
+% We aim to identify $\sim150$ stream members, as our preliminary modeling shows that such a number of radial velocity measurements is sufficient to place accurate and tight constraints on the Galactic gravitational potential.
+% This will also be comparable to the number of radial velocity measurements for Pal~5 and GD-1 streams.
+% However, since the targeted streams are much more tenuous than either Pal~5 or GD-1 (Grillmair \& Johnson 2006), we require more pointings for a given limiting magnitude to identify the same number of members.
+% These observations will break new ground in exploring kinematics of diffuse halo substructure, and will also guide our future campaigns aimed at kinematic profiling of all the cold streams in the Milky Way.
+
+\noindent{\bf MMT/Hectochelle Spectroscopy:} 
+% We will observe with MMT/Hectochelle using the 110\,$l$/mm grating, using the `RV31' order-blocking filter over the wavelength range 5150--5300\,\AA, yielding $\sim$1.5~km\,s$^{-1}$ per resolution element.
+% The velocity precision achieved by the TDC Hectochelle pipeline and this setup under typical observing conditions is further improved to better than 1\,km/s.
+% The chosen wavelength region contains the Mgb triplet and an assortment of Fe~II lines, which will be used to measure chemical abundances with the locally developed Payne code (Y.-S. Ting, C. Conroy, et al. in prep).
+% These will be used in concert with measured radial velocities to ascertain the stream membership probability of each target.
+% With fiber size of 1.5$''$ we can fit $\sim$100 high priority targets on each pointing, in addition to similar numbers of lower priority stars.
+% The remaining $\sim$40 fibers will be used to estimate sky background throughout the field.
+% Data taken in 2017A suggests that we can reach our targeted velocity uncertainty of $\lesssim$10 km/s in 1.5 hours for stars as faint as $r=20.5$ (Figure~3 right).
+% Given these requirements, we are able to observe $\sim$4 fields per night.
+
+\noindent{\bf Proposal Time Request:}
+% Tidal tails of NGC~5466 and the Styx stream are both $\sim50^\circ$ long, so to fully characterize their velocity gradients, we originally requested a total of 12 Hectochelle pointings, or one pointing for every $\sim$10$^\circ$ along each of the streams.
+% We have obtained data on five Styx fields and three NGC~5466 fields.
+% Including overheads for field acquisition and calibration ($\sim$30 minutes per pointing), completing the observations of our remaining four fields will therefore require $\sim$8 hours, or 1 night. 
+
+{\par\bf R.A. range of principal targets (hours): }10 to 10:30
+{\par\bf Dec. range of principal targets (degrees): }+35 to +45
+
+\pagebreak
+
+% \begin{figure*}
+% \begin{center}
+% \includegraphics[width=1\textwidth]{../plots/stream_map_north.pdf}
+% \caption{\small Stellar density map of the Milky Way halo, obtained by matched-filtering the SDSS photometric catalog, reveals a wealth of substructure (modified from Grillmair \& Carlin 2016).
+% Previous follow-up campaigns have spectroscopically characterized more extended features, such as the Sagittarius stream or the Virgo Overdensity.
+% However, the underlying gravitational potential is most exquisitely traced by the cold and narrow streams, and its accurate reconstruction requires dynamical information.
+% {\bf We propose to measure radial velocities along the NGC~5466 tidal tails and the Styx stream, thus doubling the census of cold streams with kinematic constraints, and validating current constraints on the Galactic gravitational potential}.
+% }
+% \label{fig:fos}
+% \end{center}
+% \end{figure*}
+% 
+% \begin{figure*}\vskip-0.1in
+% \begin{center}
+% \includegraphics[width=1\textwidth]{../plots/ngc5466_vr.png}
+% \caption{\small Models of the NGC~5466 tidal tails in a gravitational potential constrained by the Pal~5 and GD-1 streams, color-coded by the z-axis flattening of the host dark matter halo.
+% {\bf While all of the allowed models predict the same on-sky positions for NGC~5466 stream} (\emph{left}), {\bf its radial velocity profile can differentiate between the models of a different halo shape} (\emph{right}).
+% These differences are easily resolved using the Hectochelle spectrograph.
+% }
+% \label{fig:ngc5466}
+% \end{center}
+% \end{figure*}
+% 
+% \begin{figure*}\vskip-1in
+% \begin{center}
+% \includegraphics[width=1\textwidth]{../plots/targeting.png}
+% \caption{\small Color-magnitude diagrams of the NGC~5466 (\emph{left}) and Styx streams (\emph{center}).
+% Uncertainties in radial velocity measurements using 1.5\,hr Hectochelle exposures in typical conditions are better than 10\,km/s at $r\simeq20.5$ (\emph{right}).
+% {\bf The proposed observations will easily obtain radial velocities of NGC~5466 members down to the main sequence, and along the red giant branch and blue horizontal branch of the more distant Styx stream}.
+% }
+% \label{fig:targets}
+% \end{center}
+% \end{figure*}
+
+% \section{References}
+% 
+% List references in a separate section of within the first two sections.
+% 
+% \section{Figures} 
+% 
+% Include several figures with captions
+% 
+% To insert figures into your proposal, use the latex includegraphics command.
+
+% \section{Target List}
+% 
+% Include a table of targets if needed
+
+\section*{References}\vskip-0.2in
+{\small
+Bonaca, Geha, Kuepper, et al.\ 2014, \apj, 795, 94, \emph{Milky Way Mass and Potential Recovery Using Tidal Streams in a Realistic Halo} \,\textbullet\,
+Bovy et al. 2016, arXiv:1609.01298, \emph{The shape of the inner Milky Way halo from observations of the Pal 5 and GD-1 stellar streams} \,\textbullet\,
+Grillmair 2009, \apj, 693, 1118, \emph{Four New Stellar Debris Streams in the Galactic Halo} \,\textbullet\,
+Grillmair \& Johnson 2006, \apj, 639, L17, \emph{The Detection of a 45$^\circ$ Tidal Stream Associated with the Globular Cluster NGC 5466} \,\textbullet\,
+Koposov, Rix \& Hogg \ 2010, \apj, 712, 260, \emph{Constraining the Milky Way Potential with a Six-Dimensional Phase-Space Map of the GD-1 Stellar Stream} \,\textbullet\,
+K\" upper et al. 2015, \apj, 803, 80, \emph{Globular Cluster Streams as Galactic High-Precision Scales--the Poster Child Palomar 5} \,\textbullet\,
+Law \& Majewski 2010, \apj, 714, 229, \emph{The Sagittarius Dwarf Galaxy: A Model for Evolution in a Triaxial Milky Way Halo} \,\textbullet\,
+Lux et al. 2012, \mnras, 424, L16, \emph{NGC 5466: a unique probe of the Galactic halo shape} \,\textbullet\,
+Pe\~ narrubia et al. 2010, \mnras, 408, L26, \emph{Was the progenitor of the Sagittarius stream a disc galaxy?} \,\textbullet\,
+Vera-Ciro \& Helmi 2013, \apj, 773, L4, \emph{Constraints on the Shape of the Milky Way Dark Matter Halo from the Sagittarius Stream} \,\textbullet\,
+Zhu et al. 2016, \mnras, 458, 1559, \emph{Baryonic impact on the dark matter distribution in Milky Way-sized galaxies and their satellites}
+}
+
+\section*{Previous Time Awards \& Publications}\vskip-0.2in
+
+The PI was awarded time on MMT/Hectochelle in 2017A and on Magellan/M2FS in 2017A and 2017B.
+Initial results from the Hectochelle run on the more complete Styx stream are currently being written up, while the M2FS data is still undergoing analysis.
+
+% \section*{Long-term Extensions}
+
+% List previous \& concurrent awards of time on CfA and other 
+% telescopes for this project. If appropriate, include references 
+% to several recent publications.  You can also include a total
+% number of publications.
+
+% \vskip 4ex
+% \noindent
+% {\bf Proposal Length: maximum of four pages}
+% 
+% \vskip 2ex
+% \noindent
+% Scientific Justification \& experimental design: two pages
+% 
+% \noindent
+% References, figures, target list, \& publications: two pages
+% 
+% \noindent
+% You may join sections together as appropriate.
+% 
+% \vskip 4ex
+% \noindent
+% {\bf Template layout and font size:} Please do not change the 
+% default point size of the type (12 pt), the line spacing, or 
+% the size of the margins (1" all sides).
+% 
+% \vskip 2ex
+% \noindent
+% As long as you maintain the page limits, font size, and margins, 
+% you may use another font style or template if you prefer.
+
+\end{document}
