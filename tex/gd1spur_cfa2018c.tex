@@ -109,10 +109,8 @@ Over 30 stellar streams have been discovered around the Milky Way through a comb
 
 \noindent{\bf Observing Strategy:}
 We will use MMT/Hectochelle spectrograph to measure radial velocities of stars in the GD-1 stream.
-- high probability members based on cmd + pm, number per field
+- high probability members based on cmd + pm -- observe \emph{all} of them
 - pilot data obtained in one field, success rate
-- small parallax for the rest --> complement H3 to fainter magnitudes
-- 13 fields to map entire region with potential signatures of interaction
 % Both streams are photometrically detected in the SDSS, which we will use for spectroscopic targeting.
 % Streams occupy a well defined region in the color-magnitude diagram (Figure~3, NGC~5466 on the left, and Styx in the middle), so target priorities will be assigned through matched filtering to reduce the contamination from the Milky Way field stars.
 % We aim to identify $\sim150$ stream members, as our preliminary modeling shows that such a number of radial velocity measurements is sufficient to place accurate and tight constraints on the Galactic gravitational potential.
@@ -121,18 +119,20 @@ We will use MMT/Hectochelle spectrograph to measure radial velocities of stars i
 % These observations will break new ground in exploring kinematics of diffuse halo substructure, and will also guide our future campaigns aimed at kinematic profiling of all the cold streams in the Milky Way.
 
 \noindent{\bf MMT/Hectochelle Spectroscopy:}
-% We will observe with MMT/Hectochelle using the 110\,$l$/mm grating, using the `RV31' order-blocking filter over the wavelength range 5150--5300\,\AA, yielding $\sim$1.5~km\,s$^{-1}$ per resolution element.
-% The velocity precision achieved by the TDC Hectochelle pipeline and this setup under typical observing conditions is further improved to better than 1\,km/s.
-% The chosen wavelength region contains the Mgb triplet and an assortment of Fe~II lines, which will be used to measure chemical abundances with the locally developed Payne code (Y.-S. Ting, C. Conroy, et al. in prep).
-% These will be used in concert with measured radial velocities to ascertain the stream membership probability of each target.
-% With fiber size of 1.5$''$ we can fit $\sim$100 high priority targets on each pointing, in addition to similar numbers of lower priority stars.
-% The remaining $\sim$40 fibers will be used to estimate sky background throughout the field.
-% Data taken in 2017A suggests that we can reach our targeted velocity uncertainty of $\lesssim$10 km/s in 1.5 hours for stars as faint as $r=20.5$ (Figure~3 right).
-% Given these requirements, we are able to observe $\sim$4 fields per night.
+We will observe with MMT/Hectochelle using the 110\,$l$/mm grating and the `RV31' order-blocking filter over the wavelength range 5150--5300\,\AA, yielding $\sim$1.5~km\,s$^{-1}$ per resolution element.
+The velocity precision achieved by the TDC Hectochelle pipeline and this setup under typical observing conditions is further improved to better than 1\,km/s.
+The chosen wavelength region contains the Mgb triplet and an assortment of Fe~II lines, which will be used to measure chemical abundances with the Payne code (Ting et al. 2018).
+We will assign membership probability of each target based on the Gaia proper motions, PanSTARRS photometry, measured radial velocity and metallicity.
+Target selection based on proper motions is highly efficient, so there are on average only x top priority targets per Hectochelle field.
+We plan to dedicate additional y fibers to lower priority giant stars with similar proper motions, and z fibers to field halo stars (selected to have small parallax) in order to complement the H3 survey (PI Conroy) at fainter magnitudes.
+The remaining $\sim$40 fibers will be used to estimate sky background throughout the field.
+Previous experience suggests that we can reach our targeted velocity uncertainty of $\lesssim$1 km/s in 2.5 hours for stars as faint as $g=20.5$. % (Figure~3 right).
 
 \noindent{\bf Proposal Time Request:}
+- 13 fields to map entire region with potential signatures of interaction
 % Tidal tails of NGC~5466 and the Styx stream are both $\sim50^\circ$ long, so to fully characterize their velocity gradients, we originally requested a total of 12 Hectochelle pointings, or one pointing for every $\sim$10$^\circ$ along each of the streams.
 % We have obtained data on five Styx fields and three NGC~5466 fields.
+% Given these requirements, we are able to observe $\sim$3.5 fields per night.
 % Including overheads for field acquisition and calibration ($\sim$30 minutes per pointing), completing the observations of our remaining four fields will therefore require $\sim$8 hours, or 1 night.
 
 {\par\bf R.A. range of principal targets (hours): }10 to 10:30
@@ -190,17 +190,18 @@ We will use MMT/Hectochelle spectrograph to measure radial velocities of stars i
 
 \section*{References}\vskip-0.2in
 {\small
-Bonaca, Geha, Kuepper, et al.\ 2014, \apj, 795, 94, \emph{Milky Way Mass and Potential Recovery Using Tidal Streams in a Realistic Halo} \,\textbullet\,
-Bovy et al. 2016, arXiv:1609.01298, \emph{The shape of the inner Milky Way halo from observations of the Pal 5 and GD-1 stellar streams} \,\textbullet\,
-Grillmair 2009, \apj, 693, 1118, \emph{Four New Stellar Debris Streams in the Galactic Halo} \,\textbullet\,
-Grillmair \& Johnson 2006, \apj, 639, L17, \emph{The Detection of a 45$^\circ$ Tidal Stream Associated with the Globular Cluster NGC 5466} \,\textbullet\,
-Koposov, Rix \& Hogg \ 2010, \apj, 712, 260, \emph{Constraining the Milky Way Potential with a Six-Dimensional Phase-Space Map of the GD-1 Stellar Stream} \,\textbullet\,
-K\" upper et al. 2015, \apj, 803, 80, \emph{Globular Cluster Streams as Galactic High-Precision Scales--the Poster Child Palomar 5} \,\textbullet\,
-Law \& Majewski 2010, \apj, 714, 229, \emph{The Sagittarius Dwarf Galaxy: A Model for Evolution in a Triaxial Milky Way Halo} \,\textbullet\,
-Lux et al. 2012, \mnras, 424, L16, \emph{NGC 5466: a unique probe of the Galactic halo shape} \,\textbullet\,
-Pe\~ narrubia et al. 2010, \mnras, 408, L26, \emph{Was the progenitor of the Sagittarius stream a disc galaxy?} \,\textbullet\,
-Vera-Ciro \& Helmi 2013, \apj, 773, L4, \emph{Constraints on the Shape of the Milky Way Dark Matter Halo from the Sagittarius Stream} \,\textbullet\,
-Zhu et al. 2016, \mnras, 458, 1559, \emph{Baryonic impact on the dark matter distribution in Milky Way-sized galaxies and their satellites}
+% Bonaca, Geha, Kuepper, et al.\ 2014, \apj, 795, 94, \emph{Milky Way Mass and Potential Recovery Using Tidal Streams in a Realistic Halo} \,\textbullet\,
+% Bovy et al. 2016, arXiv:1609.01298, \emph{The shape of the inner Milky Way halo from observations of the Pal 5 and GD-1 stellar streams} \,\textbullet\,
+% Grillmair 2009, \apj, 693, 1118, \emph{Four New Stellar Debris Streams in the Galactic Halo} \,\textbullet\,
+% Grillmair \& Johnson 2006, \apj, 639, L17, \emph{The Detection of a 45$^\circ$ Tidal Stream Associated with the Globular Cluster NGC 5466} \,\textbullet\,
+% Koposov, Rix \& Hogg \ 2010, \apj, 712, 260, \emph{Constraining the Milky Way Potential with a Six-Dimensional Phase-Space Map of the GD-1 Stellar Stream} \,\textbullet\,
+% K\" upper et al. 2015, \apj, 803, 80, \emph{Globular Cluster Streams as Galactic High-Precision Scales--the Poster Child Palomar 5} \,\textbullet\,
+% Law \& Majewski 2010, \apj, 714, 229, \emph{The Sagittarius Dwarf Galaxy: A Model for Evolution in a Triaxial Milky Way Halo} \,\textbullet\,
+% Lux et al. 2012, \mnras, 424, L16, \emph{NGC 5466: a unique probe of the Galactic halo shape} \,\textbullet\,
+% Pe\~ narrubia et al. 2010, \mnras, 408, L26, \emph{Was the progenitor of the Sagittarius stream a disc galaxy?} \,\textbullet\,
+% Vera-Ciro \& Helmi 2013, \apj, 773, L4, \emph{Constraints on the Shape of the Milky Way Dark Matter Halo from the Sagittarius Stream} \,\textbullet\,
+% Zhu et al. 2016, \mnras, 458, 1559, \emph{Baryonic impact on the dark matter distribution in Milky Way-sized galaxies and their satellites}
+Ting et al. 2018, arXiv:1804.01530, \emph{The Payne: self-consistent ab initio fitting of stellar spectra}
 }
 
 \section*{Previous Time Awards \& Publications}\vskip-0.2in
